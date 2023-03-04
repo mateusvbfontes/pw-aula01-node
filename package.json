@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "description": "Projeto de teste",
   "main": "index.js",
-  "type" : "module",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Mateus",
   "license": "ISC",
   "dependencies": {
+    "chalk": "^5.2.0",
     "prompt-sync": "^4.2.0"
   }
 }

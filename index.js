@@ -1,4 +1,5 @@
 import PromptSync from "prompt-sync"
+import chalk from "chalk"
 
 const prompt  = PromptSync()
 
@@ -30,15 +31,30 @@ const prompt  = PromptSync()
 
 //Ex2
 
-const nascimento = prompt("Digite o ano de nascimento ")
+// const nascimento = prompt("Digite o ano de nascimento ")
 
-const ano = new Date().getFullYear()
+// const ano = new Date().getFullYear()
 
-if(ano - nascimento >= 18)
-    console.log("Já pode tirar sua CNH")
-else
-    console.log("Não pode tirar sua CNH")
+// if(ano - nascimento >= 18)
+//     console.log(chalk.red("Já pode tirar sua CNH"))
+// else
+//     console.log("Não pode tirar sua CNH")
 
+const first = Number(prompt(chalk.red("Digite o primeiro valor: ")))
+
+const second = Number(prompt(chalk.red("Digite o segundo valor: ")))
+
+const third = Number(prompt(chalk.red("Digite o terceiro valor: ")))
+
+const fourth = Number(prompt(chalk.red("Digite o quarto valor: ")))
+
+const fifth = Number(prompt(chalk.red("Digite o quinto valor: ")))
+
+console.log(chalk.bgCyanBright.black("Calculando a média..."))
+
+const media = (first + second + third + fourth + fifth) / 5
+
+console.log(chalk.blue(`Média dos valores: ${media}`))
 
 
 
